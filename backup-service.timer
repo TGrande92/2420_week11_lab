@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer to backup-script, it is set to run on friday with a random delay of 300 seconds to stagger for performance reasons. If the machine is not on, it will run on next boot
+
+[Timer]
+OnCalendar=Fri 01:00:00
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

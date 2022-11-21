@@ -1,0 +1,9 @@
+[Unit]
+Description= Checks configuration file for directories to back up and the host address for the machine to backup too, then uses rsync to backup files to designated server.
+
+[Service]
+Type=oneshot
+ExecStart=/opt/backup/backup-script
+
+[Install]
+WantedBy=multi-user.target

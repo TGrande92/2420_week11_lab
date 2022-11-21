@@ -1,0 +1,11 @@
+#!/bin/bash
+#Description: Uses rsync to back up directories to a server
+
+. ./backup.conf
+
+echo Backing up ${DIRECTORIES} to ${SERVER_IP}
+
+
+rsync -aPv -e "ssh -i ~/.ssh/tyler-backup" ${DIRECTORIES} tyler-server@${SERVER_IP}:/home/tyler-server/backup
+
+exit 0
