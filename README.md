@@ -26,7 +26,7 @@ My script looked like this:
 Start by naming your file foo_bar.service and then editing it in such a way that it includes a [Unit], [Service] and [Install].
 There are many resources online as to what you can put here so I will not be going into detail about this.
 
-![backup_service](./backup-service.service)
+![backup_service](./images/backup_service.png)
 
 ###Creating your timer
 Making sure to put a randomized delay in we will follow a similar format to the service file making sure to name is foo_bar.timer and including [Unit], [Timer] and [Install] sections
