@@ -2,7 +2,9 @@
 # Backing up files with rsync as a service
 ###Creating your script
 When writing your script you will want to write code that can be read properly we can include a header with descriptions and a shebang.
+
 ![header](./images/header.png)
+
 In this instance we are using rsync:
 ```
     rsync options /path/to/host/file new_user@host_ip:/path/to/save/to
@@ -17,6 +19,7 @@ In this file I did something like
 ```
 
 My script looked like this:
+
 ![backup_script](./images/backup_script.png)
 
 ###Creating your service file
